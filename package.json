@@ -1,0 +1,16 @@
+{
+  "name": "cleanplate",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "check": "node --check server.mjs && node --check locations.mjs && node --check providers.mjs && node --check san-mateo.mjs && node --check public/app.js && node --check public/motion.js && node --check assessment.mjs && node --check public/assessment.js",
+    "test": "node --test server.test.mjs assessment.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "description": "A local restaurant finder built around official health inspections, with worldwide location search and explainable evidence assessments."
+}
